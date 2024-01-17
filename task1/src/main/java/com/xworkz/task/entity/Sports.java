@@ -1,4 +1,4 @@
-package com.xworkz.jpa.entity;
+package com.xworkz.task.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,17 +13,20 @@ import javax.persistence.Table;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "shop_info")
-public class Shop {
+@Table(name = "sports")
+public class Sports {
     @Id
     @Column(name = "id")
-    private int id;
+    private  int id;
     @Column(name = "name")
-    private String name;
-    @Column(name = "city")
-    private String city;
-    @Column(name = "location")
-    private String location;
-    @Column(name = "ownername")
-    private String ownername;
+    private  String name;
+    @Column(name = "originCountry")
+    private  String originCountry;
+    @Column(name = "captainName")
+
+    private  String captainName;
+    @Column(name = "totalplayer")
+
+    private  int totalplayer;
+
 }
